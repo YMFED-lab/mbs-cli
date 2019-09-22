@@ -1,0 +1,26 @@
+[
+    {
+      "name":"vue-webpack-pc",
+      "branch":"master",
+      "url":"http://git.ym/Chenmh/bs-init-template.git",
+      "description":"基于webpack构建的vue项目模板"
+    },
+    {
+      "name":"react-webpack-pc",
+      "branch":"master",
+      "url":"http://git.ym/Chenmh/bs-init-template.git",
+      "description":"基于webpack构建的react项目模板"
+    },
+    {
+      "name":"angular-webpack-pc",
+      "branch":"master",
+      "url":"http://git.ym/Chenmh/bs-init-template.git",
+      "description":"基于webpack构建的react项目模板"
+    },
+    {
+      "name":"discover your template",
+      "branch":"master",
+      "url":"http://git.ym/Chenmh/bs-init-template.git",
+      "description":"更多海量模板等你发掘与收藏."
+    }
+]

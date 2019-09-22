@@ -1,0 +1,31 @@
+{
+  "name": "mbs-cli",
+  "version": "1.0.12",
+  "description": "rapid development project tool",
+  "bin": {
+    "mbs": "bin/mbs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://git.ym/g-web/mbs-cli.git"
+  },
+  "bugs": {
+    "url": "http://git.ym/g-web/mbs-cli/issues"
+  },
+  "author": "exp",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "cli-table": "^0.3.1",
+    "request": "^2.87.0",
+    "commander": "^2.20.0",
+    "download-git-repo": "^2.0.0",
+    "handlebars": "^4.1.2",
+    "inquirer": "^6.4.1",
+    "log-symbols": "^3.0.0",
+    "ora": "^3.4.0"
+  }
+}

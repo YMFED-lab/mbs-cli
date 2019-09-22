@@ -1,0 +1,63 @@
+#!/usr/bin/env node
+
+process.env.NODE_PATH = __dirname + '/../node_modules/'
+
+const { resolve } = require('path')
+const program = require('commander')
+
+const res = command => resolve(__dirname, '../commands/', command)
+ 
+program
+  .usage('<rapid development project tool>')
+
+program
+  .version(require('../package').version )
+
+program
+  .command('add')
+  .description('Add a new template')
+  .alias('a')
+  .action(() => {
+    require(res('add'))
+  })
+  
+
+
+program
+  .command('init')
+  .description('Generate a new project')
+  .alias('i')
+  .action(() => {
+    require(res('init'))
+  })
+
+program
+  .command('init simple')
+  .description('Generate a simple project')
+  .alias('ins')
+  .action(() => {
+    require(res('init-simple'))
+  })
+
+program
+  .command('create')
+  .description('Generate a new project')
+  .alias('c')
+  .action(() => {
+    require(res('create'))
+  })
+  
+
+program
+  .command('list')
+  .description('List all the templates')
+  .alias('l')
+  .action(() => {
+    require(res('list'))
+  })
+  
+program.parse(process.argv);
+
+if(!program.args.length){
+  program.help();//如果没有输入参数，终端显示帮助
+}
