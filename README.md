@@ -17,7 +17,7 @@ npm install mbs-cli -g
 ```
 or
 ```
-git clone http://git.ym/g-web/mbs-cli.git
+git clone https://github.com/YMFED-lab/mbs-cli.git
 
 cd mbs && npm install
 
