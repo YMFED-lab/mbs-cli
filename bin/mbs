@@ -4,14 +4,14 @@ process.env.NODE_PATH = __dirname + '/../node_modules/'
 
 const { resolve } = require('path')
 const program = require('commander')
-
+const { figletStr } = require(`${__dirname}/../utils/figlet`);
 const res = command => resolve(__dirname, '../commands/', command)
- 
-program
-  .usage('<rapid development project tool>')
 
 program
-  .version(require('../package').version )
+  .usage(figletStr() + '\n\n<rapid development project tool>')
+
+program
+  .version(require('../package').version)
 
 program
   .command('add')
